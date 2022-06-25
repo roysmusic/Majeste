@@ -1,8 +1,8 @@
-<h2 align="centre">Muud Music Mp3 Video Oynatıcı 🎵</h2>
+<h2 align="centre">Majeste Music Mp3 Video Oynatıcı 🎵</h2>
 
 ### Güncellendi aktif.... 
 <p align="center">
-  <img src="https://telegra.ph//file/4c86190fcbe14428c8c6b.jpg">
+  <img src="https://telegra.ph/file/84594fdaf393886cfce23.jpg">
 </p> 
 
 ### Komutlar Genel 🍭
@@ -35,10 +35,14 @@
 - `/alive` - botun çalışma bilgilerini gösterir !
 <h4>🔺 Herokuya Dağıt 🔻</h4>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Samilx01/bokk)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MacroKeke/Majeste)
 
 Get pyrogram (p)  `SESSION` buradan:
 
 [![Run on Repl.it](https://repl.it/badge/github/Makoto-XD/Session-Generator)](https://replit.com/@Makoto-XD/Session-Generator)
+
+### Support
+
+**Yardım için [Destek](https://t.me/majesteler) Grubumuza gelebilirsiniz   .  .  .!**
 
 
