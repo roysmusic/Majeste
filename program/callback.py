@@ -29,19 +29,19 @@ async def cbstart(_, query: CallbackQuery):
                 [
                     InlineKeyboardButton(
                         "🎉  ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ  🎉",
-                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                        url=f"https://t.me/MajesteMusicProBot?startgroup=true",
                     )
                 ],
                 [
                     InlineKeyboardButton("📚 ᴋᴏᴍᴜᴛʟᴀʀ", callback_data="cbcmds"),
-                    InlineKeyboardButton("💝 sᴀʜɪʙɪᴍ", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("💝 sᴀʜɪʙɪᴍ", url=f"https://t.me/MajesteSahip"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🗯️ ᴅᴇsᴛᴇᴋ ɢʀᴜʙᴜ", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "🗯️ ᴅᴇsᴛᴇᴋ ɢʀᴜʙᴜ", url=f"https://t.me/majesteler"
                     ),
                     InlineKeyboardButton(
-                        "📣 ʙɪʟɢɪ ᴋᴀɴᴀʟɪ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 ʙɪʟɢɪ ᴋᴀɴᴀʟɪ", url=f"https://t.me/majestebotlar"
                     ),
                 ],
             ]
@@ -59,14 +59,14 @@ async def cbguides(_, query: CallbackQuery):
 1.) First, add this bot to your Group.
 2.) Then, promote this bot as administrator on the Group also give all permissions except Anonymous admin.
 3.) After promoting this bot, type /reload in Group to update the admin data.
-3.) Invite @{ASSISTANT_NAME} to your group or type /userbotjoin to invite her (unfortunately the userbot will joined by itself when you type `/play (song name)` or `/vplay (song name)`).
+3.) Invite @MajesteMusicAsistan to your group or type /userbotjoin to invite her (unfortunately the userbot will joined by itself when you type `/play (song name)` or `/vplay (song name)`).
 4.) Turn on/Start the video chat first before start to play video/music.
 
 `- END, EVERYTHING HAS BEEN SETUP -`
 
 📌 If the userbot not joined to video chat, make sure if the video chat already turned on and the userbot in the chat.
 
-💡 If you have a follow-up questions about this bot, you can tell it on my support chat here: @{GROUP_SUPPORT}.""",
+💡 If you have a follow-up questions about this bot, you can tell it on my support chat here: @Majesteler.""",
         reply_markup=InlineKeyboardMarkup(
             [[InlineKeyboardButton("🔙  Go Back  🔙", callback_data="cbstart")]]
         ),

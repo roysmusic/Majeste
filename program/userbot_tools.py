@@ -9,7 +9,7 @@ from driver.decorators import authorized_users_only, sudo_users_only
 
 
 @Client.on_message(
-    command(["katil", f"katil@{BOT_USERNAME}"]) & other_filters
+    command(["katil", f"katil@MajesteMusicProBot"]) & other_filters
 )
 @authorized_users_only
 async def join_chat(c: Client, m: Message):
@@ -27,7 +27,7 @@ async def join_chat(c: Client, m: Message):
 
 
 @Client.on_message(
-    command(["ayril", f"ayril@{BOT_USERNAME}"]) & other_filters
+    command(["ayril", f"ayril@MajesteMusicProBot"]) & other_filters
 )
 @authorized_users_only
 async def leave_chat(_, m: Message):

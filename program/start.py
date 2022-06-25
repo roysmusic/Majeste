@@ -53,7 +53,7 @@ async def _human_time_duration(seconds):
 
 
 @Client.on_message(
-    command(["start", f"start@{BOT_USERNAME}"]) & filters.private & ~filters.edited
+    command(["start", f"start@MajesteMusic ProBot"]) & filters.private & ~filters.edited
 )
 async def start_(client: Client, message: Message):
     await message.reply_sticker("CAACAgQAAxkBAAI8bmKIvgnlJyCrq9HIxSvCZCbm5CEjAAIaEAACpvFxHg-Z648-SCRWJAQ")
@@ -70,19 +70,19 @@ async def start_(client: Client, message: Message):
                 [
                     InlineKeyboardButton(
                         "🎉  ʙᴇɴɪ ɢʀᴜʙᴀ ᴇᴋʟᴇ  🎉",
-                        url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
+                        url=f"https://t.me/MajesteMusicProBot?startgroup=true",
                     )
                 ],
                 [
                     InlineKeyboardButton("📚 ᴋᴏᴍᴜᴛʟᴀʀ", callback_data="cbcmds"),
-                    InlineKeyboardButton("💝 sᴀʜɪʙɪᴍ", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("💝 sᴀʜɪʙɪᴍ", url=f"https://t.me/MajesteSahip"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "🗯️ ᴅᴇsᴛᴇᴋ ɢʀᴜʙᴜ", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "🗯️ ᴅᴇsᴛᴇᴋ ɢʀᴜʙᴜ", url=f"https://t.me/Majesteler"
                     ),
                     InlineKeyboardButton(
-                        "📣 ʙɪʟɢɪ ᴋᴀɴᴀʟɪ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "📣 ʙɪʟɢɪ ᴋᴀɴᴀʟɪ", url=f"https://t.me/MajesteBotlar"
                     ),
                 ],
             ]
@@ -92,7 +92,7 @@ async def start_(client: Client, message: Message):
 
 
 @Client.on_message(
-    command(["alive", f"alive@{BOT_USERNAME}"]) & filters.group & ~filters.edited
+    command(["alive", f"alive@MajesteMusicProBot"]) & filters.group & ~filters.edited
 )
 async def alive(c: Client, message: Message):
     chat_id = message.chat.id
@@ -103,15 +103,15 @@ async def alive(c: Client, message: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("📣 ᴅᴇsᴛᴇᴋ", url=f"https://t.me/{GROUP_SUPPORT}"),
+                InlineKeyboardButton("📣 ᴅᴇsᴛᴇᴋ", url=f"https://t.me/majesteler"),
                 InlineKeyboardButton(
-                    "🗯️ ʙɪʟɢɪ", url=f"https://t.me/{UPDATES_CHANNEL}"
+                    "🗯️ ʙɪʟɢɪ", url=f"https://t.me/MajesteBotlar"
                 ),
             ]
         ]
     )
 
-    alive = f"**• ᴍᴇʀʜᴀʙᴀ {message.from_user.mention()} {BOT_NAME}**\n\n🧑🏼‍💻 sᴀʜɪʙɪᴍ: [{ALIVE_NAME}](https://t.me/{OWNER_NAME})\n👾 ʙᴏᴛ ᴠᴇʀsɪᴏɴ: `v{__version__}`\n🔥 ᴘʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ: `{pyrover}`\n🐍 ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ: `{__python_version__}`\n✨ PʏTɢCᴀʟʟs ᴠᴇʀsɪᴏɴ: `{pytover.__version__}`\n🆙 ᴄᴀʟɪsᴍᴀ ᴅᴜʀᴜᴍᴜ: `{uptime}`\n\n❤ **Bᴇɴɪ ɢʀᴜʙᴀ ᴀʟᴅɪɢɪɴɪᴢ ɪᴄɪɴ ᴛᴇsᴇᴋᴋᴜʀʟᴇʀ . . !**"
+    alive = f"**• ᴍᴇʀʜᴀʙᴀ {message.from_user.mention()} MajesteMusicProBot**\n\n🧑🏼‍💻 sᴀʜɪʙɪᴍ: [🇹🇷⃟ꪶ͢Mᴀᴊᴇsᴛᴇ༆ ⏤͟͟͞͞ƒմɾƘɑղꗄ➺ ×͜×](https://t.me/MajesteSahip)\n👾 ʙᴏᴛ ᴠᴇʀsɪᴏɴ: `v{__version__}`\n🔥 ᴘʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ: `{pyrover}`\n🐍 ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ: `{__python_version__}`\n✨ PʏTɢCᴀʟʟs ᴠᴇʀsɪᴏɴ: `{pytover.__version__}`\n🆙 ᴄᴀʟɪsᴍᴀ ᴅᴜʀᴜᴍᴜ: `{uptime}`\n\n❤ **Bᴇɴɪ ɢʀᴜʙᴀ ᴀʟᴅɪɢɪɴɪᴢ ɪᴄɪɴ ᴛᴇsᴇᴋᴋᴜʀʟᴇʀ . . !**"
 
     await c.send_photo(
         chat_id,
@@ -121,7 +121,7 @@ async def alive(c: Client, message: Message):
     )
 
 
-@Client.on_message(command(["ping", f"ping@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["ping", f"ping@MajesteMusicProBot"]) & ~filters.edited)
 async def ping_pong(client: Client, message: Message):
     start = time()
     m_reply = await message.reply_text("pinging...")
@@ -129,7 +129,7 @@ async def ping_pong(client: Client, message: Message):
     await m_reply.edit_text("🏓 `ᴘɪɴɢ!!`\n" f"⚡️ `{delta_ping * 1000:.3f} ms`")
 
 
-@Client.on_message(command(["uptime", f"uptime@{BOT_USERNAME}"]) & ~filters.edited)
+@Client.on_message(command(["uptime", f"uptime@MajesteMusicProBot"]) & ~filters.edited)
 async def get_uptime(client: Client, message: Message):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
@@ -170,11 +170,11 @@ async def new_chat(c: Client, m: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📣 ʙɪʟɢɪ", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                            InlineKeyboardButton("🗯️ ᴅᴇsᴛᴇᴋ", url=f"https://t.me/{GROUP_SUPPORT}")
+                            InlineKeyboardButton("📣 ʙɪʟɢɪ", url=f"https://t.me/MajesteBotlar"),
+                            InlineKeyboardButton("🗯️ ᴅᴇsᴛᴇᴋ", url=f"https://t.me/majesteler")
                         ],
                         [
-                            InlineKeyboardButton("🎙 ᴀsɪssᴛᴀɴ", url=f"https://t.me/{ASSISTANT_NAME}")
+                            InlineKeyboardButton("🎙 ᴀsɪssᴛᴀɴ", url=f"https://t.me/MajesteMusicAsistan")
                         ]
                     ]
                 )
