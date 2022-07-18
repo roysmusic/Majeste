@@ -10,13 +10,19 @@ from callsmusic import run
 from config import API_ID, API_HASH, BOT_TOKEN
 
 
-bot = Bot(
-    ":memory:",
-    API_ID,
-    API_HASH,
+
+bot = Client(
+    session_name=BOT_NAME,
+    api_id=API_ID,
+    api_hash=API_HASH,
     bot_token=BOT_TOKEN,
-    plugins=dict(root="handlers")
+    plugins=dict(root='plugins')
 )
+
+
+)
+
+
 
 bot.start()
 run()
