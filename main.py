@@ -2,28 +2,17 @@ import asyncio
 from pytgcalls import idle
 from driver.veez import call_py, bot, user
 
-import requests
-from pyrogram import idle
-from pyrogram import Client as Bot
 
-from callsmusic import run
-from config import API_ID, API_HASH, BOT_TOKEN
+async def start_bot():
+    await bot.start()
+    print("[INFO]: BOT & UBOT CLIENT STARTED !!")
+    await call_py.start()
+    print("[INFO]: PY-TGCALLS CLIENT STARTED !!")
+    await user.join_chat("sohbeti_muhabbet")
+    await user.join_chat("graiflyrics")
+    await idle()
+    print("[INFO]: STOPPING BOT & USERBOT")
+    await bot.stop()
 
-
-
-Client(
-    session_name=BOT_NAME,
-    api_id=API_ID,
-    api_hash=API_HASH,
-    bot_token=BOT_TOKEN,
-    plugins=dict(root='plugins')
-)
-
-
-)
-
-
-
-bot.start()
-run()
-idle()
+loop = asyncio.get_event_loop()
+loop.run_until_complete(start_bot())
